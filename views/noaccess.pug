@@ -1,0 +1,8 @@
+extends ./layout.pug
+
+block content
+    h1 HTTP Error: 500
+    h2 Don't think you were meant to access this website!
+    if ip != undefined && city != undefined && country != undefined
+        h2 Your IP is #{ip} which can be located in #{city}, #{country}
+    h2 Your attempt to access this server has been recorded 
